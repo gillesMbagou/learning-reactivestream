@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      database:
+      host: localhost
+      port: 27017
+---
+spring:
+  profiles: nonprod
+---
+spring:
+  profiles: prod
+
+

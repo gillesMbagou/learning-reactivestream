@@ -1,11 +1,12 @@
 package com.learnreactivespring.domain;
 
-import javax.persistence.Entity;
+import javax.annotation.Resource;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+@Resource
+
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

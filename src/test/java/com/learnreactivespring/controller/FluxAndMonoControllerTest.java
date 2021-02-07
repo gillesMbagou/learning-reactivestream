@@ -94,7 +94,7 @@ class FluxAndMonoControllerTest {
 
         StepVerifier.create(responseBody)
                 .expectSubscription()
-                .expectNext(0, 1, 2, 3, 4)
+                .expectNext(0, 1, 2, 3, 5) //4
                 .thenCancel()
                 .verify();
     }
